@@ -1,26 +1,45 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import ProductImage from './NikeShoe.png'
+import NikeOfficialLogo from './Nike Official Logo 2.png'
+import Home from './Components/Home.js'
+import TopNavBar from './Components/TopNavBar.js'
+import BottomNavBar from './Components/BottomNavBar.js'
+import MensWear from './Components/MensWear.js';
+// import WomensWear from './Components/WomensWear.js';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
+import WomensWear from './Components/WomensWear';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div >
+     
+      <Router>
+    
+        <TopNavBar />
+    
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/Menswear' element={<MensWear />}/>
+          <Route path='/Womenswear' element={<WomensWear />} />
+          <Route path='Kidsfashion' />
+        </Routes>
+        
+        <BottomNavBar />
+      
+      </Router>
+    
     </div>
-  );
+  )
 }
 
 export default App;

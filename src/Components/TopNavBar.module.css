@@ -1,0 +1,159 @@
+.abc{
+    width: 100%;
+    height:1000px;
+    background-color: black;
+  }
+  .App {
+    text-align: center;
+    background-color: blue;
+    width: 100%;
+    height: 600px;
+    border-bottom-left-radius: 500px;
+    -webkit-box-shadow: -4px 11px 21px 6px rgba(0, 41, 114, 0.23);
+    box-shadow: -4px 11px 21px 6px rgba(0, 41, 114, 0.23);
+    border: crimson 2px black;
+  }
+  
+  
+  .DisplayShoeContainer {
+    width: 350px;
+    height: 350px;
+    float: right;
+    border-radius: 50%;
+    background-color: white;
+    /* position: a/absolute; */
+    margin-top: 120px;
+    margin-right: 140px;
+    -webkit-box-shadow: -4px 11px 21px 6px rgba(0, 41, 114, 0.23);
+    box-shadow: -4px 11px 21px 6px rgba(0, 41, 114, 0.23);
+    /* padding: 10px; */
+  }
+  
+  .ProductImage1 {
+    height: 225px;
+    margin-top: 50px;
+    -webkit-animation: scale-up-ver-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-ver-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  
+  .TopBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    z-index:2;
+  }
+  
+  .LinkArea {
+    float: right;
+    color: white;
+    margin-right: 50px;
+    margin-top: 25px;
+  }
+  
+  .LinkButton {
+    font-weight: 900;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    color:white
+  }
+  
+  .LinkButton:hover {
+    border-bottom: white 2px solid;
+    transition-duration: 0.2s;
+  }
+  
+  .DisplayTextContainer {
+    float: left;
+    width: 550px;
+    height: 250px;
+    background-color: transparent;
+    margin-top: 190px;
+    margin-left: 130px;
+    font-size: 65px;
+    color: white;
+  }
+  
+  .TagLine {
+    font-size: 20px;
+  }
+  
+  .ShopNowButton {
+    height: 50px;
+    width: 200px;
+    outline: none;
+    background-color: #ff2727;
+    border-radius: 30px;
+    color: white;
+    border: 1px solid transparent;
+    font-size: 16px;
+    transition-duration: 0.3s;
+  }
+  .ShopNowButton:hover{
+    background-color: white;
+    color:#ff2727;
+    transition-duration: 0.5s;
+    border:1px solid #ff2727;
+  }
+  .OfficialLogo{
+    height: 100px;
+    margin-left: 100px;
+  }
+  
+  
+  .scale-up-ver-bottom {
+      -webkit-animation: scale-up-ver-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: scale-up-ver-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @-webkit-keyframes scale-up-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+  }
+  @keyframes scale-up-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+  }
+  
